@@ -8,8 +8,10 @@ while menu==1:
     print("3=Quiero de Euros convertirlo a otro tipo de Moneda")
     submenu=int(input(":"))
     if submenu==1:
+        print("*"*50)
         print("1=De pesos Mexicanos a Dolares de Estados Unidos")
         print("2=De pesos Mexicanos a Euros")
+        print("*"*50)
         opcion=int(input("Que opciones eliges:"))
         if opcion==1:
             opcionx=1
@@ -19,12 +21,14 @@ while menu==1:
                 D=Converciones(cantidad)
                 print(D.PesosAdolares())
                 contador=contador+D.PesosAdolares()
-                opcionx=int(input("Deseas seguir conviertiendo pesos a dolares\n1=SI\n2=NO\n:"))
+                print("*"*50)
+                opcionx=int(input("Deseas seguir convirtiendo pesos a dolares\n1=SI\n2=NO\n:"))
+                print("*"*100)
                 if opcionx!=1:
+                    print(f"Esta es la suma de tus Pesos convertidos a Dolares:$ {contador} Dolares")
                     print("*"*100)
-                    print(f"Esta es la suma de tus Pesos convertidos a Dolares:${contador} Dolares")
                     menu=int(input("Deseas seguir con el Programa\n1=SI\n2=NO\n:"))
-                    print("*"*100)
+                    print("")
         
         elif opcion==2:
             opcionx=1
@@ -34,18 +38,22 @@ while menu==1:
                 E=Converciones(cantidad)
                 print(E.PesosAEuros())
                 contador1=contador1+E.PesosAEuros()
-                opcionx=int(input("Deseas seguir conviertiendo pesos a Euros\n1=SI\n2=NO\n:"))
+                print("*"*50)
+                opcionx=int(input("Deseas seguir convirtiendo pesos a Euros\n1=SI\n2=NO\n:"))
+                print("*"*100)
                 if opcionx!=1:
+                    print(f"Esta es la suma de tus Pesos convertidos a Euros:€ {contador1} Euros")
                     print("*"*100)
-                    print(f"Esta es la suma de tus Pesos convertidos a Euros:€{contador1} Euros")
                     menu=int(input("Deseas seguir con el Programa\n1=SI\n2=NO\n:"))
-                    print("*"*100)
+                    print("")
             
                 
     
     elif submenu==2:
+        print("*"*50)
         print("1=De Dolares a Pesos Mexicanos")
         print("2=De Dolares a Euros")
+        print("*"*50)
         opcion=int(input("Que opciones eliges:"))
         opcionz=1
         contador2=0
@@ -57,12 +65,14 @@ while menu==1:
                 P=Converciones(cantidad)
                 print(P.DolarAPesos())
                 contador2=contador2+P.DolarAPesos()
-                opcionz=int(input("Deseas seguir conviertiendo Dolares a Pesos\n1=SI\n2=NO\n:"))
+                print("*"*50)
+                opcionz=int(input("Deseas seguir convirtiendo Dolares a Pesos\n1=SI\n2=NO\n:"))
+                print("*"*100)
                 if opcionz!=1:
+                    print(f"Esta es la suma de tus Dolares convertidos a Pesos:$ {contador2} Pesos")
                     print("*"*100)
-                    print(f"Esta es la suma de tus Dolares convertidos a Pesos:${contador2} Pesos")
                     menu=int(input("Deseas seguir con el Programa\n1=SI\n2=NO\n:"))
-                    print("*"*100)
+                    print("")
                     
         elif opcion==2:
             opcionw=1
@@ -72,17 +82,22 @@ while menu==1:
                 Eu=Converciones(cantidad)
                 print(Eu.DolarAEuros())
                 contador3=contador3+Eu.DolarAEuros()
-                opcionw=int(input("Deseas seguir conviertiendo Dolares a Euros\n1=SI\n2=NO\n:"))
+                print("*"*50)
+                opcionw=int(input("Deseas seguir convirtiendo Dolares a Euros\n1=SI\n2=NO\n:"))
+                print("*"*100)
                 if opcionw!=1:
+                    print(f"Esta es la suma de tus Dolares convertidos a Euros:€ {contador3} Euros")
                     print("*"*100)
-                    print(f"Esta es la suma de tus Dolares convertidos a Euros:€{contador3} Euros")
                     menu=int(input("Deseas seguir con el Programa\n1=SI\n2=NO\n:"))
-                    print("*"*100)
+                    print("")
+                   
 
 
     elif submenu==3:
+        print("*"*50)
         print("1=De Euros a Pesos Mexicanos")
         print("2=De Euros a Dolares")
+        print("*"*50)
         opcion=int(input("Que opciones eliges:"))
         opcionxv=1
         contador4=0
@@ -92,12 +107,15 @@ while menu==1:
                 E=Converciones(cantidad)
                 print(E.EurosAPesos())
                 contador4=contador4+E.EurosAPesos()
-                opcionxv=int(input("Deseas seguir conviertiendo Euros a Pesos\n1=SI\n2=NO\n:"))
+                print("*"*50)
+                opcionxv=int(input("Deseas seguir convirtiendo Euros a Pesos\n1=SI\n2=NO\n:"))
+                print("*"*100)
+
                 if opcionxv!=1:
+                    print(f"Esta es la suma de tus Euros convertidos a Pesos:$ {contador4} Pesos")
                     print("*"*100)
-                    print(f"Esta es la suma de tus Euros convertidos a Pesos:${contador4} Pesos")
                     menu=int(input("Deseas seguir con el Programa\n1=SI\n2=NO\n:"))
-                    print("*"*100)
+                    print("")
         
         elif opcion==2:
             opcionxx=1
@@ -107,13 +125,14 @@ while menu==1:
                 Ed=Converciones(cantidad)
                 print(Ed.EurosADolar())
                 contador5=contador5+Ed.EurosADolar()
-                opcionxx=int(input("Deseas seguir conviertiendo Euros a Dolares\n1=SI\n2=NO\n:"))
-
+                print("*"*50)
+                opcionxx=int(input("Deseas seguir convirtiendo Euros a Dolares\n1=SI\n2=NO\n:"))
+                print("*"*100)
                 if opcionxx!=1:
+                    print(f"Esta es la suma de tus Euros convertidos a Dolares:$ {contador5} Dolares")
                     print("*"*100)
-                    print(f"Esta es la suma de tus Euros convertidos a Dolares:${contador5} Dolares")
                     menu=int(input("Deseas seguir con el Programa\n1=SI\n2=NO\n:"))
-                    print("*"*100)
+                    print("")
 
 
 
