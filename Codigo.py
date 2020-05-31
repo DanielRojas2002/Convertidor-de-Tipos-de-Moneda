@@ -5,6 +5,7 @@ while menu==1:
     print("*"*20+"Menu Principal"+"*"*20)
     print("1=Quiero de Pesos Mexicanos convertirlo a otro tipo de Moneda")
     print("2=Quiero de Dolares EstadoUnidenses convertirlo a otro tipo de Moneda")
+    print("3=Quiero de Euros convertirlo a otro tipo de Moneda")
     submenu=int(input(":"))
     if submenu==1:
         print("1=De pesos Mexicanos a Dolares de Estados Unidos")
@@ -77,3 +78,24 @@ while menu==1:
                     print(f"Esta es la suma de tus Dolares convertidos a Euros:€{contador3} Euros")
                     menu=int(input("Deseas seguir con el Programa\n1=SI\n2=NO\n:"))
                     print("*"*100)
+
+
+    elif submenu==3:
+        print("1=De Euros a Pesos Mexicanos")
+        print("2=De Euros a Dolares")
+        opcion=int(input("Que opciones eliges:"))
+        opcionxv=1
+        contador4=0
+        if opcion==1:
+            while opcionxv==1:
+                cantidad=int(input("Dime la cantidad de Euros deseas convertir:"))
+                E=Converciones(cantidad)
+                print(E.EurosAPesos())
+                contador4=contador4+E.EurosAPesos()
+                opcionxv=int(input("Deseas seguir conviertiendo Euros a Pesos\n1=SI\n2=NO\n:"))
+                if opcionxv!=1:
+                    print("*"*100)
+                    print(f"Esta es la suma de tus Euros convertidos a Pesos:${contador4} Pesos")
+                    menu=int(input("Deseas seguir con el Programa\n1=SI\n2=NO\n:"))
+                    print("*"*100)
+
