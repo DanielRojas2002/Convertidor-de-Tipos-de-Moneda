@@ -98,4 +98,24 @@ while menu==1:
                     print(f"Esta es la suma de tus Euros convertidos a Pesos:${contador4} Pesos")
                     menu=int(input("Deseas seguir con el Programa\n1=SI\n2=NO\n:"))
                     print("*"*100)
+        
+        elif opcion==2:
+            opcionxx=1
+            contador5=0
+            while opcionxx==1:
+                cantidad=int(input("Dime la cantidad de Euros deseas convertir:"))
+                Ed=Converciones(cantidad)
+                print(Ed.EurosADolar())
+                contador5=contador5+Ed.EurosADolar()
+                opcionxx=int(input("Deseas seguir conviertiendo Euros a Dolares\n1=SI\n2=NO\n:"))
+
+                if opcionxx!=1:
+                    print("*"*100)
+                    print(f"Esta es la suma de tus Euros convertidos a Dolares:${contador5} Dolares")
+                    menu=int(input("Deseas seguir con el Programa\n1=SI\n2=NO\n:"))
+                    print("*"*100)
+
+
+
+
 
