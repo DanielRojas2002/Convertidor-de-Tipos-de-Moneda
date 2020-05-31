@@ -18,3 +18,10 @@ class Converciones:
     def DolarAEuros(self):
         euros=self.__cantidad*0.90
         return euros
+    
+    def EurosADolar(self):
+        dolar=self.__cantidad*1.11
+        return dolar
+
+    def EurosAPesos(self):
+        pesos=self.__cantidad*24.62
