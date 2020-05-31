@@ -24,4 +24,5 @@ class Converciones:
         return dolar
 
     def EurosAPesos(self):
-        pesos=self.__cantidad*24.62
+        Pesos=self.__cantidad*24.62
+        return Pesos
