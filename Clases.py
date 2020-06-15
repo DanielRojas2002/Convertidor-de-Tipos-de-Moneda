@@ -3,7 +3,7 @@ class Converciones:
         self.__cantidad=cantidad
         
     def PesosAdolares(self):
-        dolar=self.__cantidad/22.17
+        dolar=self.__cantidad/22.18
         return dolar
     
     
